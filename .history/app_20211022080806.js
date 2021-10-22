@@ -27,7 +27,7 @@ function addItem(e) { // 4.
     } else if (value && editFLag) {
         console.log('editing');
     } else {
-        displayAlert('please enter value', 'danger'); // 10.
+        displayAlert('', 'danger'); // 10.
     }
 }
 
@@ -35,12 +35,6 @@ function addItem(e) { // 4.
 function displayAlert(text, action) {
     alert.textContent = text; // 8.
     alert.classList.add(`alert-${action}`); // 9.
-
-    // remove alert
-    setTimeout(function() { // 11.
-        alert.textContent = ''; // 12.
-    alert.classList.remove(`alert-${action}`); // 13.
-    }, 1000)
 }
 
 // ****** LOCAL STORAGE **********

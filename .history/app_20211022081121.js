@@ -39,7 +39,7 @@ function displayAlert(text, action) {
     // remove alert
     setTimeout(function() { // 11.
         alert.textContent = ''; // 12.
-    alert.classList.remove(`alert-${action}`); // 13.
+    alert.classList.add(`alert-${action}`); // 13.
     }, 1000)
 }
 

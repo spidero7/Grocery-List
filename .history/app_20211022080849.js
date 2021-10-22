@@ -36,11 +36,7 @@ function displayAlert(text, action) {
     alert.textContent = text; // 8.
     alert.classList.add(`alert-${action}`); // 9.
 
-    // remove alert
-    setTimeout(function() { // 11.
-        alert.textContent = ''; // 12.
-    alert.classList.remove(`alert-${action}`); // 13.
-    }, 1000)
+    // 
 }
 
 // ****** LOCAL STORAGE **********
