@@ -13,14 +13,9 @@ let editFLag = false;
 let editID = '';
 
 // ****** EVENT LISTENERS **********
-    // submit form
-form.addEventListener('submit', addItem)
+    // su
 
 // ****** FUNCTIONS **********
-function addItem(e) {
-    e.preventDefault();
-    
-}
 
 // ****** LOCAL STORAGE **********
 

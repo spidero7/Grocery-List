@@ -19,7 +19,6 @@ form.addEventListener('submit', addItem)
 // ****** FUNCTIONS **********
 function addItem(e) {
     e.preventDefault();
-    
 }
 
 // ****** LOCAL STORAGE **********

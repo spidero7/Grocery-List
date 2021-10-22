@@ -14,13 +14,9 @@ let editID = '';
 
 // ****** EVENT LISTENERS **********
     // submit form
-form.addEventListener('submit', addItem)
+form.addEventListener('submit', )
 
 // ****** FUNCTIONS **********
-function addItem(e) {
-    e.preventDefault();
-    
-}
 
 // ****** LOCAL STORAGE **********
 
