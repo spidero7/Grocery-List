@@ -22,19 +22,11 @@ function addItem(e) { // 4.
     const value = groceryInput.value; // 6. store user input
     const id = new Date().getTime().toString(); // 7. unique number for the item
 
-    if (value && !editFLag) { // 8.
-        console.log('add value to the list');
-    } else if (value && editFLag) {
-        console.log('editing');
-    } else {
-        displayAlert('empty value', 'danger'); // 10.
-    }
-}
+    if () {
 
-    // display alert
-function displayAlert(text, action) {
-    alert.textContent = text; // 8.
-    alert.classList.add(`alert-${action}`); // 9.
+    } else if() {
+        
+    }
 }
 
 // ****** LOCAL STORAGE **********

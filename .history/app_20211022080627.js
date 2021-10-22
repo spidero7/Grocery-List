@@ -27,7 +27,7 @@ function addItem(e) { // 4.
     } else if (value && editFLag) {
         console.log('editing');
     } else {
-        displayAlert('empty value', 'danger'); // 10.
+        displayAlert('empty value', 'danger');
     }
 }
 

@@ -27,15 +27,13 @@ function addItem(e) { // 4.
     } else if (value && editFLag) {
         console.log('editing');
     } else {
-        displayAlert('empty value', 'danger'); // 10.
+        alert.textContent = "empty value"; // 8.
+        alert.classList.add('alert-danger');
     }
 }
 
     // display alert
-function displayAlert(text, action) {
-    alert.textContent = text; // 8.
-    alert.classList.add(`alert-${action}`); // 9.
-}
+function displayAlert
 
 // ****** LOCAL STORAGE **********
 
