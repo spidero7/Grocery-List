@@ -14,13 +14,12 @@ let editID = '';
 
 // ****** EVENT LISTENERS **********
     // submit form
-form.addEventListener('submit', addItem) // when we submit (click on the button) ivoke function addItem
+form.addEventListener('submit', addItem)
 
 // ****** FUNCTIONS **********
 function addItem(e) {
     e.preventDefault();
-    const value = groceryInput.value; // store user input
-    const id = new Date().getTime().toString(); // unique number for the item
+    const value = gro
 }
 
 // ****** LOCAL STORAGE **********

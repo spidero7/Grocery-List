@@ -19,7 +19,7 @@ form.addEventListener('submit', addItem) // when we submit (click on the button)
 // ****** FUNCTIONS **********
 function addItem(e) {
     e.preventDefault();
-    const value = groceryInput.value; // store user input
+    const value = groceryInput.value; //
     const id = new Date().getTime().toString(); // unique number for the item
 }
 
