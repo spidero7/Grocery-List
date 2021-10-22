@@ -39,12 +39,7 @@ function addItem(e) { // 4.
             <i class="fas fa-trash"></i>
           </button>
         </div>`; // 19.
-        // append child
-        list.appendChild(element); // 20.
-        // display alert
-        displayAlert('item added to the list', 'success'); // 21.
-        // show container
-        container.classList.add('show-container'); // 22/
+        
     } else if (value && editFLag) {
         console.log('editing');
     } else {

@@ -29,22 +29,7 @@ function addItem(e) { // 4.
         // add id
         const attr = document.createAttribute('data-id'); // 16.
         attr.value = id // 17.
-        element.setAttributeNode(attr); // 18.
-        element.innerHTML = `<p class="title">${value}</p>
-        <div class="btn-container">
-          <button type="button" class="edit-btn">
-            <i class="fas fa-edit"></i>
-          </button>
-          <button type="button" class="delete-btn">
-            <i class="fas fa-trash"></i>
-          </button>
-        </div>`; // 19.
-        // append child
-        list.appendChild(element); // 20.
-        // display alert
-        displayAlert('item added to the list', 'success'); // 21.
-        // show container
-        container.classList.add('show-container'); // 22/
+        element
     } else if (value && editFLag) {
         console.log('editing');
     } else {

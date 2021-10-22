@@ -23,28 +23,7 @@ function addItem(e) { // 4.
     const id = new Date().getTime().toString(); // 7. unique number for the item
 
     if (value && !editFLag) { // 8.
-        const element = document.createElement('article'); // 14.
-        // add class
-        element.classList.add('grocery-item'); // 15.
-        // add id
-        const attr = document.createAttribute('data-id'); // 16.
-        attr.value = id // 17.
-        element.setAttributeNode(attr); // 18.
-        element.innerHTML = `<p class="title">${value}</p>
-        <div class="btn-container">
-          <button type="button" class="edit-btn">
-            <i class="fas fa-edit"></i>
-          </button>
-          <button type="button" class="delete-btn">
-            <i class="fas fa-trash"></i>
-          </button>
-        </div>`; // 19.
-        // append child
-        list.appendChild(element); // 20.
-        // display alert
-        displayAlert('item added to the list', 'success'); // 21.
-        // show container
-        container.classList.add('show-container'); // 22/
+        const element = document.createElement('article');
     } else if (value && editFLag) {
         console.log('editing');
     } else {

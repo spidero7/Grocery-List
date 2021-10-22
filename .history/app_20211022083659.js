@@ -42,9 +42,8 @@ function addItem(e) { // 4.
         // append child
         list.appendChild(element); // 20.
         // display alert
-        displayAlert('item added to the list', 'success'); // 21.
-        // show container
-        container.classList.add('show-container'); // 22/
+        displayAlert('item added to the list', 'succes'); // 21.
+        
     } else if (value && editFLag) {
         console.log('editing');
     } else {
