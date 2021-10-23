@@ -95,7 +95,7 @@ function clearItems() { // 31.
 function editItem(e) {
     const element = e.currentTarget.parentElement.parentElement; // current target is a edit button // 48
     // set edit item
-    editElement = e.currentTarget.parentElement.previousElementSibling; // item title one the same line // 49
+    editElement = e.currentTarget.parentElement;
     console.log(editElement);
 }
 // delete function - 41
