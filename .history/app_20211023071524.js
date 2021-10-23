@@ -73,7 +73,7 @@ function setBackToDefault() { // 26.
     groceryInput.value = "";
     editFLag = false;
     editID = '';
-    submitButton.textContent = "submit";
+    submitButton.textContent = ''
 }
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value) { // 25.

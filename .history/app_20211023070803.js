@@ -46,9 +46,7 @@ function addItem(e) { // 4.
         // show container
         container.classList.add('show-container'); // 22/
         // add to local storage
-        addToLocalStorage(id, value); // 23. /placeholder
-        // set back to default
-        setBackToDefault(); // 24. placeholder
+        addToLocalStorage(id, value); 
     } else if (value && editFLag) {
         console.log('editing');
     } else {
@@ -68,16 +66,6 @@ function displayAlert(text, action) {
     }, 1000)
 }
 
-// set back to default
-function setBackToDefault() { // 26.
-    groceryInput.value = "";
-    editFLag = false;
-    editID = '';
-    submitButton.textContent = "submit";
-}
 // ****** LOCAL STORAGE **********
-function addToLocalStorage(id, value) { // 25.
-    console.log('added to local storage');
-}
 
 // ****** SETUP ITEMS **********

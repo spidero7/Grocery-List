@@ -69,11 +69,8 @@ function displayAlert(text, action) {
 }
 
 // set back to default
-function setBackToDefault() { // 26.
-    groceryInput.value = "";
-    editFLag = false;
-    editID = '';
-    submitButton.textContent = "submit";
+function setBackToDefault() {
+    
 }
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value) { // 25.
