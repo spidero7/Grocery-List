@@ -41,12 +41,6 @@ function addItem(e) { // 4.
             <i class="fas fa-trash"></i>
           </button>
         </div>`; // 19.
-
-        const deleteButton = element.querySelector('.delete-btn'); // 37
-        const editButton = element.querySelector('.edit-btn'); // 38
-
-        deleteButton.addEventListener('click', deleteItem); // 39
-        editButton.addEventListener('click', editItem); // 39
         // append child
         list.appendChild(element); // 20.
         // display alert
@@ -87,18 +81,9 @@ function clearItems() { // 31.
     }
     container.classList.remove('show-container'); // 34
     displayAlert('empty list', 'danger'); // 35
-    setBackToDefault(); // 36
-    // localStorage.removeItem('list');
+    setBackToDefault
 }
 
-// edit function
-function editItem() {
-    console.log('item edited');
-}
-// delete function
-function deleteItem() {
-    console.log('item deleted');
-}
 // set back to default
 function setBackToDefault() { // 26.
     groceryInput.value = ""; // 27.

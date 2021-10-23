@@ -92,13 +92,9 @@ function clearItems() { // 31.
 }
 
 // edit function
-function editItem() {
-    console.log('item edited');
-}
+
 // delete function
-function deleteItem() {
-    console.log('item deleted');
-}
+
 // set back to default
 function setBackToDefault() { // 26.
     groceryInput.value = ""; // 27.

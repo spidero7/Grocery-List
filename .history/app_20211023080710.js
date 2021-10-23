@@ -92,8 +92,8 @@ function clearItems() { // 31.
 }
 
 // edit function
-function editItem() {
-    console.log('item edited');
+function editButton() {
+    console.log();
 }
 // delete function
 function deleteItem() {
