@@ -70,17 +70,7 @@ function displayAlert(text, action) {
     }, 1000)
 }
 
-// clear items
-function clearItems() { // 31.
-    const items = document.querySelectorAll('.grocery-item') // 32
-    
-    if (items.length > 0) {  // 33
-        items.forEach(item => {
-            list.removeChild(item);
-        })
-    }
-    container.classList.remove('show-container'); // 34
-}
+
 
 // set back to default
 function setBackToDefault() { // 26.

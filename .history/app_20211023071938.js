@@ -15,8 +15,6 @@ let editID = '';
 // ****** EVENT LISTENERS **********
     // submit form
 form.addEventListener('submit', addItem) // 3. when we submit (click on the button) ivoke function addItem
-    // clear items
-clearButton.addEventListener('click', clearItems);
 
 // ****** FUNCTIONS **********
 function addItem(e) { // 4.
@@ -70,24 +68,12 @@ function displayAlert(text, action) {
     }, 1000)
 }
 
-// clear items
-function clearItems() { // 31.
-    const items = document.querySelectorAll('.grocery-item') // 32
-    
-    if (items.length > 0) {  // 33
-        items.forEach(item => {
-            list.removeChild(item);
-        })
-    }
-    container.classList.remove('show-container'); // 34
-}
-
 // set back to default
 function setBackToDefault() { // 26.
-    groceryInput.value = ""; // 27.
+    groceryInput.value = ""; // 27. 
     editFLag = false; // 28.
-    editID = ''; // 29.
-    submitButton.textContent = "submit"; // 30.
+    editID = ''; // 29
+    submitButton.textContent = "submit";
 }
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value) { // 25.

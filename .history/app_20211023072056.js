@@ -15,8 +15,7 @@ let editID = '';
 // ****** EVENT LISTENERS **********
     // submit form
 form.addEventListener('submit', addItem) // 3. when we submit (click on the button) ivoke function addItem
-    // clear items
-clearButton.addEventListener('click', clearItems);
+    
 
 // ****** FUNCTIONS **********
 function addItem(e) { // 4.
@@ -68,18 +67,6 @@ function displayAlert(text, action) {
         alert.textContent = ''; // 12.
     alert.classList.remove(`alert-${action}`); // 13.
     }, 1000)
-}
-
-// clear items
-function clearItems() { // 31.
-    const items = document.querySelectorAll('.grocery-item') // 32
-    
-    if (items.length > 0) {  // 33
-        items.forEach(item => {
-            list.removeChild(item);
-        })
-    }
-    container.classList.remove('show-container'); // 34
 }
 
 // set back to default
