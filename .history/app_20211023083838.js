@@ -46,7 +46,7 @@ function addItem(e) { // 4.
         const editButton = element.querySelector('.edit-btn'); // 38
 
         deleteButton.addEventListener('click', deleteItem); // 39
-        editButton.addEventListener('click', editItem); // 40
+        editButton.addEventListener('click', editItem); // 39
         // append child
         list.appendChild(element); // 20.
         // display alert
@@ -91,18 +91,13 @@ function clearItems() { // 31.
     // localStorage.removeItem('list');
 }
 
-// edit function - 42
+// edit function
 function editItem() {
     console.log('item edited');
 }
-// delete function - 41
+// delete function
 function deleteItem(e) {
-    const element = e.currentTarget.parentElement.parentElement;
-    list.removeChild(element);
-
-    if ( list.children.length === 0) { // 42
-        container.classList.remove('show-container');
-    }
+    const element = e.currentTarget
 }
 // set back to default
 function setBackToDefault() { // 26.

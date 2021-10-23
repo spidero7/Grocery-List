@@ -98,12 +98,7 @@ function editItem() {
 // delete function - 41
 function deleteItem(e) {
     const element = e.currentTarget.parentElement.parentElement;
-    list.removeChild(element);
-
-    if ( list.children.length === 0) { // 42
-        container.classList.remove('show-container');
-    }
-}
+    list.removeChild(element);}
 // set back to default
 function setBackToDefault() { // 26.
     groceryInput.value = ""; // 27.

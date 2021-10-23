@@ -101,7 +101,7 @@ function deleteItem(e) {
     list.removeChild(element);
 
     if ( list.children.length === 0) { // 42
-        container.classList.remove('show-container');
+        container.classList.remove('.show-container');
     }
 }
 // set back to default
