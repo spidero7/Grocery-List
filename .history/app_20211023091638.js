@@ -92,14 +92,13 @@ function clearItems() { // 31.
 }
 
 // edit function - 42
-function editItem(e) {
-    const element = e.currentTarget.parentElement.parentElement; // current target is a edit button // 48
-    console.log(element);
+function editItem() {
+    console.log('item edited');
 }
 // delete function - 41
 function deleteItem(e) {
     const element = e.currentTarget.parentElement.parentElement; // current target is a delete button
-    const id = element.dataset.id; // 47
+    const id = element.dataset.id; // 
     list.removeChild(element);
 
     if ( list.children.length === 0) { // 42

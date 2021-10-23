@@ -92,14 +92,12 @@ function clearItems() { // 31.
 }
 
 // edit function - 42
-function editItem(e) {
-    const element = e.currentTarget.parentElement.parentElement; // current target is a edit button // 48
-    console.log(element);
+function editItem() {
+    console.log('item edited');
 }
 // delete function - 41
 function deleteItem(e) {
     const element = e.currentTarget.parentElement.parentElement; // current target is a delete button
-    const id = element.dataset.id; // 47
     list.removeChild(element);
 
     if ( list.children.length === 0) { // 42
@@ -108,7 +106,7 @@ function deleteItem(e) {
     displayAlert('item removed', 'danger'); // 43
     setBackToDefault(); // 44
     // remove from local storage
-    // removeFromLocalStorage(id); // 45
+    removeFromLocalStorage(id); // 45
 }
 // set back to default
 function setBackToDefault() { // 26.
@@ -122,7 +120,4 @@ function addToLocalStorage(id, value) { // 25.
     console.log('added to local storage');
 }
 
-function removeFromLocalStorage(id) { // 46
-
-}
 // ****** SETUP ITEMS **********

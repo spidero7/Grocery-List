@@ -92,9 +92,7 @@ function clearItems() { // 31.
 }
 
 // edit function - 42
-function editItem(e) {
-    const element = e.currentTarget.parentElement.parentElement; // current target is a edit button // 48
-    console.log(element);
+function editItem() {
 }
 // delete function - 41
 function deleteItem(e) {
