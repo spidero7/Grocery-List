@@ -97,7 +97,6 @@ function editItem(e) {
     // set edit item
     editElement = e.currentTarget.parentElement.previousElementSibling; // item title one the same line // 49
     // set form value
-    groceryInput.value = editElement.innerHTML; // 50
 }
 // delete function - 41
 function deleteItem(e) {

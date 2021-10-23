@@ -96,8 +96,7 @@ function editItem(e) {
     const element = e.currentTarget.parentElement.parentElement; // current target is a edit button // 48
     // set edit item
     editElement = e.currentTarget.parentElement.previousElementSibling; // item title one the same line // 49
-    // set form value
-    groceryInput.value = editElement.innerHTML; // 50
+    
 }
 // delete function - 41
 function deleteItem(e) {
