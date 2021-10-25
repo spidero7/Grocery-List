@@ -58,7 +58,12 @@ function addItem(e) { // 4.
         // set back to default
         setBackToDefault(); // 24. placeholder
     } else if (value && editFLag) {
-        console.log('editing');
+        editElement.innerHTML = value; // 54
+        displayAlert('value changed', 'success'); // 55
+        // edit local storage
+        editLocalStorage(editID, value); // 56
+        setBackToDefault(); // 57
+
     } else {
         displayAlert('please enter value', 'danger'); // 10.
     }
@@ -98,6 +103,9 @@ function editItem(e) {
     editElement = e.currentTarget.parentElement.previousElementSibling; // item title one the same line // 49
     // set form value
     groceryInput.value = editElement.innerHTML; // 50
+    editFLag = true; // 51
+    editID = element.dataset.id; // 52
+    submitButton.textContent = 'edit'; // 53 
 }
 // delete function - 41
 function deleteItem(e) {
@@ -126,6 +134,10 @@ function addToLocalStorage(id, value) { // 25.
 }
 
 function removeFromLocalStorage(id) { // 46
+
+}
+
+function editLocalStorage(id, value) {
 
 }
 // ****** SETUP ITEMS **********
