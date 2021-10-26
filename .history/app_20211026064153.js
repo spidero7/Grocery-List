@@ -130,13 +130,8 @@ function setBackToDefault() { // 26.
 }
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value) { // 25.
-    const grocery = {id, value}; // 58
-    let items = localStorage.getItem('list')?JSON.parse(localStorage.getItem('list')):[]; // 59
-    console.log(items);
-    items.push(grocery); // 60
-    localStorage.setItem('list', JSON.stringify(items)) // 61
-    console.log(items);
-};
+    console.log('added to local storage');
+}
 
 function removeFromLocalStorage(id) { // 46
 
@@ -148,12 +143,4 @@ function editLocalStorage(id, value) {
 // localStorage API
 // setItem
 // getItem
-// removeItem
-// save as string
-
-// localStorage.setItem('orange', JSON.stringify(['item', 'item2']));
-// const oranges = JSON.parse(localStorage.getItem('orange'));
-// console.log(oranges);
-// localStorage.removeItem('orange')
-
 // ****** SETUP ITEMS **********

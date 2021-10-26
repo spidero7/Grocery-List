@@ -58,12 +58,7 @@ function addItem(e) { // 4.
         // set back to default
         setBackToDefault(); // 24. placeholder
     } else if (value && editFLag) {
-        editElement.innerHTML = value; // 54
-        displayAlert('value changed', 'success'); // 55
-        // edit local storage
-        editLocalStorage(editID, value); // 56
-        setBackToDefault(); // 57
-
+        editElement.innerHTML = value; //
     } else {
         displayAlert('please enter value', 'danger'); // 10.
     }
@@ -105,7 +100,7 @@ function editItem(e) {
     groceryInput.value = editElement.innerHTML; // 50
     editFLag = true; // 51
     editID = element.dataset.id; // 52
-    submitButton.textContent = 'edit'; // 53
+    submitButton.textContent = 'edit'; // 53 
 }
 // delete function - 41
 function deleteItem(e) {
@@ -130,30 +125,10 @@ function setBackToDefault() { // 26.
 }
 // ****** LOCAL STORAGE **********
 function addToLocalStorage(id, value) { // 25.
-    const grocery = {id, value}; // 58
-    let items = localStorage.getItem('list')?JSON.parse(localStorage.getItem('list')):[]; // 59
-    console.log(items);
-    items.push(grocery); // 60
-    localStorage.setItem('list', JSON.stringify(items)) // 61
-    console.log(items);
-};
+    console.log('added to local storage');
+}
 
 function removeFromLocalStorage(id) { // 46
 
 }
-
-function editLocalStorage(id, value) {
-
-}
-// localStorage API
-// setItem
-// getItem
-// removeItem
-// save as string
-
-// localStorage.setItem('orange', JSON.stringify(['item', 'item2']));
-// const oranges = JSON.parse(localStorage.getItem('orange'));
-// console.log(oranges);
-// localStorage.removeItem('orange')
-
 // ****** SETUP ITEMS **********

@@ -135,7 +135,6 @@ function addToLocalStorage(id, value) { // 25.
     console.log(items);
     items.push(grocery); // 60
     localStorage.setItem('list', JSON.stringify(items)) // 61
-    console.log(items);
 };
 
 function removeFromLocalStorage(id) { // 46
